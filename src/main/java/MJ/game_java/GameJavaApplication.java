@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GameJavaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GameJavaApplication.class, args);
+
+		System.out.println("test");
 	}
 
 }
