@@ -9,17 +9,16 @@ public class PawnTest {
     @Test
     @DisplayName("흰색 폰 생성")
     public void create_pawn_check_color_white() {
-        Pawn pawn = new Pawn(Color.WHITE);
-        assertThat(pawn.getColor()).isEqualTo(Color.WHITE);
+        verifyColorOfPawn(new Pawn(Color.WHITE), Color.WHITE);
     }
 
     @Test
     @DisplayName("검은색 폰 생성")
     public void create_pawn_check_color_balck() {
-        Pawn pawn = new Pawn(Color.BLACK);
-        assertThat(pawn.getColor()).isEqualTo(Color.BLACK);
+        verifyColorOfPawn(new Pawn(Color.BLACK), Color.BLACK);
     }
 
-
-
+    public void verifyColorOfPawn(Pawn pawn, Color color){
+        assertThat(pawn.getColor()).isEqualTo(color);
+    }
 }
