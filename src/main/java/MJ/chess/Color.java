@@ -1,2 +1,5 @@
-package MJ.chess;public enum Color {
+package MJ.chess;
+
+public enum Color {
+    BLACK, WHITE
 }

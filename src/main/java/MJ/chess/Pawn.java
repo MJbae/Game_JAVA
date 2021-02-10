@@ -1,13 +1,14 @@
-package MJ.game_java;
+package MJ.chess;
 
 public class Pawn {
-    String color;
+    private Color color;
 
-    public Pawn(String color) {
+    public Pawn(Color color) {
         this.color = color;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 }
+
